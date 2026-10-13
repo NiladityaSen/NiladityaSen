@@ -1,16 +1,23 @@
-## HELLO there
+## Todo List App
 
-<!--
-**NiladityaSen/NiladityaSen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+A lightweight todo list app built with vanilla HTML, CSS, and JavaScript.
 
-Here are some ideas to get you started:
+### Features
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- Create tasks
+- Mark tasks complete/incomplete
+- Edit and delete tasks
+- Filter tasks (all, active, completed)
+- Search tasks by title
+- Optional due date and priority
+- Local persistence with `localStorage`
+
+### Run locally
+
+Open `/home/runner/work/NiladityaSen/NiladityaSen/index.html` in a browser.
+
+### Tests
+
+```bash
+npm test
+```

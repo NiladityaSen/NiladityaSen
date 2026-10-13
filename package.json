@@ -1,0 +1,14 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "A simple browser todo list app",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "todo",
+    "vanilla-js"
+  ],
+  "license": "ISC"
+}

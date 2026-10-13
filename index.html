@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Todo List</h1>
+
+      <form id="task-form" class="task-form">
+        <label>
+          Task
+          <input id="task-title" name="title" type="text" maxlength="200" required />
+        </label>
+        <label>
+          Due date
+          <input id="task-due-date" name="dueDate" type="date" />
+        </label>
+        <label>
+          Priority
+          <select id="task-priority" name="priority">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+          </select>
+        </label>
+        <button type="submit">Add task</button>
+      </form>
+
+      <div class="controls">
+        <div class="filters" role="group" aria-label="Task filters">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="active" aria-pressed="false">Active</button>
+          <button type="button" data-filter="completed" aria-pressed="false">Completed</button>
+        </div>
+        <label>
+          Search
+          <input id="task-search" type="search" placeholder="Search tasks" />
+        </label>
+      </div>
+
+      <p id="loading-state">Loading tasks...</p>
+      <p id="empty-state" hidden>No tasks yet. Add your first task.</p>
+      <p id="status-message" role="status" aria-live="polite"></p>
+
+      <ul id="task-list" class="task-list"></ul>
+    </main>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
